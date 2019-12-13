@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit Redirector",
+  "version": "1.0",
+  "description": "Redirects Reddit to use the old design.",
+  "icons": { 
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon128.png"
+  },
+  "background":
+    {
+      "scripts": ["background.js"]
+    },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://www.reddit.com/*"
+  ]
+}
