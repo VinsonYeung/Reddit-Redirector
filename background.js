@@ -7,6 +7,8 @@ chrome.webRequest.onBeforeRequest.addListener(
     {
         urls: [
             "*://www.reddit.com/*",
+            "*://new.reddit.com/*",
+            "*://reddit.com/*",
         ]
     },   ["blocking"]
 );
